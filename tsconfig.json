@@ -1,21 +1,22 @@
 {
 	"compilerOptions": {
 		"target": "ES6",
-		"module": "CommonJS",
+		"module": "ESNext",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
 		"skipLibCheck": true,
 		"esModuleInterop": true,
-		// "allowSyntheticDefaultImports": true,
+		"allowSyntheticDefaultImports": true,
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
-		// "noFallthroughCasesInSwitch": true,
+		"noFallthroughCasesInSwitch": true,
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"noEmit": true,
-		"jsx": "react-jsx"
+		"jsx": "react-jsx",
+		"baseUrl": "src/"
 	},
-	"include": ["src"],
+	"include": ["src", "src/pages/.tsx"],
 	"exclude": ["node_modules"]
 }
