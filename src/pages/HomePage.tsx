@@ -8,6 +8,7 @@ const HomePage = () => {
 
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
 		e.preventDefault();
+		//Using sessionStorage to username
 		sessionStorage.setItem("username", username);
 		navigate("/instruction", { replace: true });
 	};

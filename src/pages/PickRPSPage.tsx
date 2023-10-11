@@ -9,11 +9,9 @@ const PickRPSPage = () => {
 	let RPSRef = useRef(0);
 	const navigate = useNavigate();
 
-	// onClick={() => navigate("/gameplay/" + choice, { replace: true })}
-
-	const handleClick = (choice: number) => {
-		RPSRef.current = choice;
-		navigate("/gameplay/" + choice, { replace: true });
+	const handleClick = (item: number) => {
+		RPSRef.current = item;
+		navigate(`/gameplay/${item}`, { replace: true });
 	};
 
 	return (
@@ -21,9 +19,9 @@ const PickRPSPage = () => {
 			<NavBar></NavBar>
 			<img src={Dual} alt="dual" className="w-[333px] h-[333px]" />
 			<div className="w-4/6 flex flex-row justify-between items-center">
-				<Card choice={1} func={handleClick}></Card>
-				<Card choice={2} func={handleClick}></Card>
-				<Card choice={3} func={handleClick}></Card>
+				<Card item={1} func={handleClick}></Card>
+				<Card item={2} func={handleClick}></Card>
+				<Card item={3} func={handleClick}></Card>
 			</div>
 			<p className="mt-10 text-xl font-semibold">/Choose one of the items/</p>
 		</div>

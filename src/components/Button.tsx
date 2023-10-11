@@ -23,7 +23,7 @@ const Button = (props: ButtonProps) => {
 		return (
 			<button
 				type="submit"
-				className="w-[480px] h-[60px] hover:bg-neutral-700 focus:bg-black text-white bg-black rounded-lg"
+				className="w-[480px] h-[60px] hover:bg-neutral-700 hover:cursor-pointer active:bg-black text-white bg-black rounded-lg"
 			>
 				{name}
 			</button>
@@ -32,7 +32,7 @@ const Button = (props: ButtonProps) => {
 	if (name === "Quit")
 		return (
 			<button
-				className="w-[120px] h-[40px] hover:bg-neutral-700 focus:bg-black text-white bg-black rounded-lg"
+				className="w-[120px] h-[40px] hover:bg-neutral-700 hover:cursor-pointer active:bg-black text-white bg-black rounded-lg"
 				onClick={handleQuit}
 			>
 				{name}
@@ -41,7 +41,7 @@ const Button = (props: ButtonProps) => {
 
 	return (
 		<button
-			className="w-[480px] h-[60px] hover:bg-neutral-700 focus:bg-black text-white bg-black rounded-lg"
+			className="w-[480px] h-[60px] hover:bg-neutral-700 hover:cursor-pointer active:bg-black text-white bg-black rounded-lg"
 			onClick={func}
 		>
 			{name}

@@ -1,7 +1,7 @@
 import HomePage from "../pages/HomePage";
 import InstructionPage from "../pages/InstructionPage";
 import PickRPSPage from "../pages/PickRPSPage";
-import PvEPage from "../pages/PvEPage";
+import ResultPage from "../pages/ResultPage";
 
 const routes = [
   {
@@ -17,8 +17,8 @@ const routes = [
     component: PickRPSPage,
   },
   {
-    path: '/gameplay/:pick',
-    component: PvEPage,
+    path: '/gameplay/:item',
+    component: ResultPage,
   },
 ];
 
