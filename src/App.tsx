@@ -9,12 +9,6 @@ function App() {
 			<Routes>
 				{routes.map((route) => {
 					const Page = route.component;
-					if (route.withNavBar)
-						return (
-							<>
-								<Route path={route.path} element={<Page />} key={route.path} />
-							</>
-						);
 					return (
 						<Route path={route.path} element={<Page />} key={route.path} />
 					);

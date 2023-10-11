@@ -7,22 +7,18 @@ const routes = [
   {
     path: '',
     component: HomePage,
-    withNavBar: false,
   },
   {
     path: '/instruction',
     component: InstructionPage,
-    withNavBar: true,
   },
   {
     path: '/gameplay',
     component: PickRPSPage,
-    withNavBar: true,
   },
   {
     path: '/gameplay/:pick',
     component: PvEPage,
-    withNavBar: true,
   },
 ];
 
