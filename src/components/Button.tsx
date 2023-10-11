@@ -1,13 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-interface buttonProps {
+interface ButtonProps {
 	size: string;
 	name: string;
 	func?: any;
 }
 
-const Button = (props: buttonProps) => {
+const Button = (props: ButtonProps) => {
 	const { size, name, func } = props;
 	const navigate = useNavigate();
 
