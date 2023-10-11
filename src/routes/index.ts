@@ -7,19 +7,27 @@ const routes = [
   {
     path: '',
     component: HomePage,
+    isAuth: false
   },
   {
     path: '/instruction',
     component: InstructionPage,
+    isAuth: true
   },
   {
     path: '/gameplay',
     component: PickRPSPage,
+    isAuth: true
   },
   {
     path: '/gameplay/:item',
     component: ResultPage,
+    isAuth: true
   },
+  {
+    path: '/*',
+    component: HomePage
+  }
 ];
 
 export default routes;
